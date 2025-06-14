@@ -1,0 +1,135 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  font-family: "Roboto Mono", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: #010e47;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-header {
+  max-width: 150px;
+  height: auto;
+}
+
+
+#calendar,
+#time-slots,
+#booking-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+#booking-confirmation {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#booking-confirmation button {
+  margin: 5% 5px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#booking-confirmation button:hover {
+  background-color: #004841;
+}
+#booking-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#time-slots{
+  text-align: center;
+}
+@media screen and (max-width: 687px){
+  #calendar{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Adjust month and year text size */
+#calendar .fc-toolbar-title {
+  font-size: 1.2em; /* Smaller font size */
+  font-weight:normal;
+  margin-bottom: 10px;
+}
+
+/* Style navigation buttons */
+#calendar .nav-button {
+  font-size: 0.9em; /* Smaller font size */
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#calendar .fc-today-button:hover {
+  background-color: #005f56;
+}
+#calendar .fc-prev-button:hover {
+  background-color: #005f56;
+}
+#calendar .fc-next-button:hover {
+  background-color: #005f56;
+}
+/* Style today button */
+#calendar .today-button {
+  font-size: 0.9em; /* Smaller font size */
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#calendar .today-button:hover {
+  background-color: #e8620e;
+}

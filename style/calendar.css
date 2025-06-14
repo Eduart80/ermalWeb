@@ -1,0 +1,132 @@
+#calendar {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.fc {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.fc-view-harness {
+    background-color: white;
+}
+
+.fc td, .fc th {
+    padding: 10px !important;
+}
+
+.fc-day:hover {
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.fc-day-today {
+    background-color: rgba(255,220,40,0.15) !important;
+}
+
+.fc-day-future {
+    cursor: pointer;
+}
+
+.fc-day-past {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.fc-button {
+    padding: 8px 16px !important;
+    font-size: 16px !important;
+}
+
+/* Time slots styling */
+#time-slots {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#time-slots button {
+    margin: 5px;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#time-slots button.selected {
+    background-color: #90EE90;
+    color: #333;
+    border-color: #4CAF50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Booking form styling */
+#booking-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Booking confirmation styling */
+#booking-confirmation {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#booking-confirmation button {
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#booking-confirmation button.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+#booking-confirmation button.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #calendar {
+        padding: 0 5px;
+    }
+    
+    .fc {
+        font-size: 14px;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.2em !important;
+    }
+
+    .fc-button {
+        padding: 6px 12px !important;
+        font-size: 14px !important;
+    }
+}
