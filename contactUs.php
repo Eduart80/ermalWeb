@@ -1,0 +1,64 @@
+<?php
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
+    <title>Contact Us - Probe Right Inspection</title>
+    <link rel="icon" href="./images/Log20x20.png" type="image/png" sizes="20x20">
+    <meta name="description" content="Professional home and commercial inspection services. | Probe Right Inspection | Home inspection company | Dallas | Fort-Worth | Texas" />
+    <meta name="keywords" content="Home inspection, Home inspection scheduling, home inspection inquiries, service provider, home inspection, commercial inspection, environmental assessment">
+    <meta name="author" content="Probe Right Inspection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contactUs/contactus.css">
+    <link rel="stylesheet" href="./contactUs/questMssg.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./images/mainLogo2.png" alt="Probe Right Inspection Logo" class="logo-header">
+        </a>
+    </header>
+
+    <?php if (isset($_SESSION['message'])): ?>
+        <div class="alert alert-success">
+            <div class="alert alert-success">
+                <?php 
+                echo $_SESSION['message'];
+                unset($_SESSION['message']);
+                ?>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <div class="contact-title">
+        <h1>Get in touch</h1>
+        <h2>Ready to schedule your inspection or have a question? Reach out to us!</h2>
+    </div>
+    
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="./contactUs/contact-form.php" onsubmit="return validateForm()">
+            <input name="name" id="name" type="text" class="form-control" placeholder="Your Name" required>
+            <input name="email" id="email" type="email" class="form-control" placeholder="Your Email" required>
+            <input name="phNumber" id="phNumber" type="tel" class="form-control" placeholder="Phone Number" pattern="[0-9]{10}" required>
+            <input name="address" id="address" type="text" class="form-control" placeholder="Your Address" required>
+            <textarea name="message" id="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+            <input type="submit" class="form-control submit" value="Send Message">
+        </form>
+    </div>
+    <div class="btn-container">
+        <a href="index.html">
+            <button class="btn"><i class="fa fa-home"></i></button>
+        </a>
+    </div>
+    <script src="./contactUs/contactus.js"></script>
+</body>
+</html>

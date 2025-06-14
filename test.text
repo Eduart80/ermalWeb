@@ -1,0 +1,7 @@
+----local server---
+npm install -g http-server
+http-server
+
+---whith sync---
+ npm install -g browser-sync
+browser-sync start --server --files="." --port 8080

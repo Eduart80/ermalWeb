@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Probe Right Inspection</title>
+    <link rel="icon" href="./images/Log20x20.png" type="image/png" sizes="20x20">
+    <meta name="description" content="Professional home and commercial inspection services. | Probe Right Inspection | Home inspection company | Dallas | Fort-Worth | Texas">
+    <meta name="keywords" content="Home inspection | Home inspection scheduling | home inspection inquiries | service provider | home inspection | commercial inspection | environmental assessment">
+    <meta name="author" content="Probe Right Inspection">
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/calendar.css" />
+    <!-- FullCalendar CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css' rel='stylesheet' />
+    
+    <!-- Your other CSS -->
+    <link rel="stylesheet" href="./style/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <!-- FullCalendar Scripts -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js'></script>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./images/mainLogo2.png" alt="Probe Right Inspection Logo" class="logo-header">
+        </a>
+    </header>
+    
+    <div id="calendar"></div>
+
+    <form id="booking-form">
+        <input type="text" id="fullName" placeholder="Enter your full name" required>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="text" id="address" placeholder="Enter your home address" required>
+    </form>
+    
+    <div id="time-slots" style="display: none"></div>
+    <div id="booking-confirmation" style="display: none"></div>
+
+    <script src="./script/calendar.js"></script>
+    <script src="./script/booking.js"></script>
+</body>
+</html>
