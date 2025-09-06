@@ -78,14 +78,19 @@ p {
     background: linear-gradient(135deg, #005f56, #00796b);
 }
 .services ul {
-    padding-left: 25%;
+    padding-left: 10%;
+    padding-right: 8%;
     text-align: left;
+}
+.services li {
+    padding-bottom: 8px;
 }
 .tech {
     text-align: center; /* Centers text and image */
     padding: 20px;
 }
-.tech p, .tech h2 {
+/* .tech p, removed from aboutUs page*/
+ .tech h2 {
     font-weight: bold; /* Makes the text bold */
 }
 
