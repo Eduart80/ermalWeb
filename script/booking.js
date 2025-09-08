@@ -1,13 +1,19 @@
 
-
 // Constants and global variables
 const EMAIL_CONFIG = {
-    SERVICE_ID: "service_4fdhyzk",
-    TEMPLATE_ID: "template_z6qj346",
-    COM_TEMPLATE_ID:"template_5vn7gdi",
-    USER_ID: "SELPS1Q3isb2mYOFb",
-    COMPANY_EMAIL: "ermalhila@hotmail.com"
+     //SERVICE_ID: "service_4fdhyzk",
+    SERVICE_ID: process.env.SERVICE_ID,
+    //TEMPLATE_ID: "template_z6qj346",
+    TEMPLATE_ID: process.env.TEMPLATE_ID,
+    //COM_TEMPLATE_ID:"template_5vn7gdi",
+    COM_TEMPLATE_ID:process.env.COM_TEMPLATE_ID,
+    //USER_ID: "SELPS1Q3isb2mYOFb",
+    USER_ID: process.env.USER_ID,
+    //COMPANY_EMAIL: "ermalhila@hotmail.com"
+    COMPANY_EMAIL: process.env.COMPANY_EMAIL
 };
+
+console.log("EMAIL_CONFIG.SERVICE_ID = "+EMAIL_CONFIG.SERVICE_ID);
 
 let selectedTimeSlot = null;
 let selectedButton = null;
