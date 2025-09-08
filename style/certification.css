@@ -3,15 +3,23 @@
             text-align: center;
             padding: 20px;
             background-color: #fff;
-            /* margin: 20px auto; */
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        a {
+            text-decoration: none; /* Remove underline */
+            border: none; /* Ensure no border */
+            outline: none; /* Remove any outline on focus */
+        }
         .certification-logo {
             max-width: 200px; /* Adjusted for the logo's circular design */
             height: auto;
+            margin: 0 20px; /* Add space between logos */
+            display: inline-block; /* Align logos inline */
+            vertical-align: middle; /* Vertically center logos */
             transition: transform 0.3s ease;
+            border: none;
         }
         .certification-logo:hover {
             transform: scale(1.05);
