@@ -11,7 +11,7 @@ if (empty($_SESSION['csrf_token'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
     <title>Contact Us - Probe Right Inspection</title>
-    <link rel="icon" href="./images/Log20x20.png" type="image/png" sizes="20x20">
+    <link rel="icon" href="./images/Logo20x20.png" type="image/png" sizes="20x20">
    <meta
       name="description"
       content="Professional home and commercial inspection services. | Probe Right Inspection
