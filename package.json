@@ -2,15 +2,19 @@
   "name": "webi",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec 'http-server . -p 8080'",
+    "generate-config": "node script/runChange.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.6.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.10"
   }
-  
 }

@@ -5,3 +5,12 @@ http-server
 ---whith sync---
  npm install -g browser-sync
 browser-sync start --server --files="." --port 8080
+
+re generate code to hide
+npm run generate-config
+
+run server with node reload auto
+nodemon --exec 'http-server . -p 8080'
+
+server
+http-server
