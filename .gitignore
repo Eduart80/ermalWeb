@@ -1,3 +1,4 @@
 .env
 /test.text
 /script/config
+/node_modules
