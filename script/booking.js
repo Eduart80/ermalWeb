@@ -1,14 +1,6 @@
 
-// Constants and global variables
-// const EMAIL_CONFIG = {
-//      SERVICE_ID: "service_4fdhyzk",
-//     TEMPLATE_ID: "template_z6qj346",
-//     COM_TEMPLATE_ID:"template_5vn7gdi",
-//     USER_ID: "SELPS1Q3isb2mYOFb",
-//     COMPANY_EMAIL: "ermalhila@hotmail.com"
-// };
 // booking.js
-const EMAIL_CONFIG = window.EMAIL_CONFIG; // Use global config from config.js
+const EMAIL_CONFIG = window.EMAIL_CONFIG; 
 
 console.log('email from config ===', EMAIL_CONFIG.SERVICE_ID);
 
