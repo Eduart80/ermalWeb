@@ -1,0 +1,83 @@
+.testimonials {
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+  
+  .testimonials h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-view {
+    overflow: hidden;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+  .testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+  }
+  
+  .testimonial {
+    flex: 0 0 300px;
+    margin: 0 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    word-wrap: break-word;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    padding: 0 1rem;
+  }
+  
+  .nav-button:focus {
+    outline: none;
+  }
+  
+  /* 📱 Mobile responsiveness */
+  @media (max-width: 600px) {
+    .testimonial {
+      flex: 0 0 90%;
+      font-size: 0.95rem;
+      padding: 1.2rem;
+    }
+  
+    .testimonial-track {
+      gap: 1rem;
+    }
+  
+    .carousel-view {
+      padding: 0 0.5rem;
+    }
+  
+    .nav-button {
+      font-size: 1.5rem;
+      padding: 0 0.5rem;
+    }
+  }
+  

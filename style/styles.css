@@ -85,12 +85,9 @@ p {
 .services li {
     padding-bottom: 8px;
 }
-.tech {
-    text-align: center; /* Centers text and image */
-    padding: 20px;
-}
-/* .tech p, removed from aboutUs page*/
- .tech h2 {
+
+
+.tech h2 {
     font-weight: bold; /* Makes the text bold */
 }
 
@@ -111,7 +108,7 @@ p {
 }
 .about, .tech {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
     background-color: #ffffff;
     margin: 20px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);

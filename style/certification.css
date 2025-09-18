@@ -13,9 +13,9 @@
             outline: none; /* Remove any outline on focus */
         }
         .certification-logo {
-            max-width: 200px; /* Adjusted for the logo's circular design */
+            max-width: 150px; /* Adjusted for the logo's circular design */
             height: auto;
-            margin: 0 20px; /* Add space between logos */
+            margin: 10px 20px; /* Add space between logos */
             display: inline-block; /* Align logos inline */
             vertical-align: middle; /* Vertically center logos */
             transition: transform 0.3s ease;

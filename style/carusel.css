@@ -8,6 +8,7 @@
   .testimonials h3 {
     text-align: center;
     margin-bottom: 1.5rem;
+    font-size: 0.8rem;
   }
   
   .testimonial-carousel {
@@ -20,7 +21,8 @@
   .carousel-view {
     overflow: hidden;
     width: 100%;
-    max-width: 960px;
+     display: flex;
+     
   }
   
   .testimonial-track {
@@ -30,41 +32,102 @@
   }
   
   .testimonial {
-    flex: 0 0 300px;
-    margin: 0 1rem;
+     display: flex; 
+     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 400px; 
+    width: 220px !important; 
+    padding: 0.5rem 0.7rem;
     background: #fff;
-    padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin: 0 0.5rem;
+    font-size: 0.93rem;
     cursor: pointer;
-    word-wrap: break-word;
+    overflow: hidden; 
   }
   
-  .stars {
-    color: gold;
-    font-size: 1.2rem;
-  }
+.testimonial p {
+  flex: 0 0 75%;
+  min-height: 0;
+  margin: 0 0 0.3em 0;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  word-break: break-word;
+ 
+}
+
+.stars {
+  flex: 0 1 5%;
+  color: gold;
+  font-size: 1.2rem;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+}
+
+.testimonial h4 {
+  flex: 0 1 20%;
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
   
   .nav-button {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.3rem;
     cursor: pointer;
     user-select: none;
     z-index: 10;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
   
   .nav-button:focus {
     outline: none;
   }
+
+  /* Add this to your CSS file, e.g., carusel.css */
+.testimonial-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
   
   /* 📱 Mobile responsiveness */
   @media (max-width: 600px) {
     .testimonial {
-      flex: 0 0 90%;
-      font-size: 0.95rem;
-      padding: 1.2rem;
+      width: 90vw !important;
+    font-size: 0.8rem;
+    padding: 1.2rem;
+  border-radius: 10%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0 0.5rem;
+    font-size: 0.93rem;
+    }
+   
+    .testimonial p {
+      padding: 15px;
+       flex: 0 0 75%;
+      margin: 0 0 0.3em 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+      word-break: break-word;
     }
   
     .testimonial-track {
