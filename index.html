@@ -36,8 +36,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="styleSheet" href="./style/page_overlay.css"/>
   </head>
-  <body>
+  <body>  
+  <div id="page-overlay" class="overlay">
+    <div class="overlay-content">
+      <img src="./images/December Discount.jpg" alt="discount">
+      <p class="p_overlay" style="font-size: 15px;">🎄 December Home Inspection Discount! 🎄<br>
+          This holiday season, make sure your home is safe and sound! 🏡<br>
+          ✅ Full Home Inspections – 30% OFF all December!<br>
+          Hurry, limited spots available!<br>
+          📞 469-307-3467 | 🌐 proberightinspection.com</p>
+      <button class="btn-overlay" onclick="document.getElementById('page-overlay').style.display='none'">Close</button>
+    </div>
+  </div>
     <header class="header">
       <img src="./images/home_inspection_2.png" alt="Probe Right Inspection Logo" class="logo-header" />
       <button class="menu-toggle" aria-label="Toggle navigation">
@@ -263,6 +275,8 @@
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
       &uarr;
     </button>
+
+    <!-- <script type="text/javascript" src="./script/page_overlay.js"></script> -->
     <script type="text/javascript" src="./script/script.js"></script>
     <script type="text/javascript" src="./script/carusel.js"></script>
   </body>
