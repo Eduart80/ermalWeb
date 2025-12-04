@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
       if (overlay) {
         overlay.style.display = "none"; // Hide the overlay
       }
-    },30000); // 30 seconds
+    },21000); // 30 seconds
   });
    // Close the overlay when clicking outside the content
   document.getElementById("page-overlay").addEventListener("click", function (event) {
