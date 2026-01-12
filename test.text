@@ -14,3 +14,10 @@ nodemon --exec 'http-server . -p 8080'
 
 server
 http-server
+
+For Future Use:
+Every time you want to test your website:
+
+Open terminal in your project folder
+Run: npx http-server . -p 8080
+Open: http://localhost:8080 in your browser

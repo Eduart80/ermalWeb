@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const getStartedButton = document.getElementById('getStartedButton');
   if (getStartedButton) {
     getStartedButton.addEventListener('click', () => {
-      window.location.href = 'contactUs.php';
+      window.location.href = 'scheduler.html';
     });
   }
 });

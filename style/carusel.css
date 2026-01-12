@@ -103,44 +103,85 @@
   
   /* 📱 Mobile responsiveness */
   @media (max-width: 600px) {
+    .testimonials {
+      padding: 2rem 0;
+    }
+
+    .testimonial-carousel {
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    .carousel-view {
+      padding: 0;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    .testimonial-track {
+      gap: 0.5rem;
+    }
+
     .testimonial {
-      width: 90vw !important;
-    font-size: 0.8rem;
-    padding: 1.2rem;
-  border-radius: 10%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 0 0.5rem;
-    font-size: 0.93rem;
+      width: calc(100vw - 60px) !important;
+      min-width: calc(100vw - 60px) !important;
+      max-width: calc(100vw - 60px) !important;
+      font-size: 0.85rem;
+      padding: 1rem;
+      margin: 0 0.25rem;
+      height: auto;
+      min-height: 300px;
     }
    
     .testimonial p {
-      padding: 15px;
-       flex: 0 0 75%;
-      margin: 0 0 0.3em 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      padding: 0;
+      flex: 0 0 auto;
+      margin: 0 0 1rem 0;
+      overflow: visible;
+      text-overflow: clip;
       word-break: break-word;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      word-break: break-word;
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      text-align: center; 
-      word-break: break-word;
+      display: block;
+      text-align: center;
+      line-height: 1.5;
     }
-  
-    .testimonial-track {
-      gap: 1rem;
+
+    .stars {
+      margin: 0.5rem 0;
     }
-  
-    .carousel-view {
-      padding: 0 0.5rem;
+
+    .testimonial h4 {
+      margin-top: 0.5rem;
     }
   
     .nav-button {
+      font-size: 1.8rem;
+      padding: 0.5rem;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    .nav-button.left {
+      margin-right: 0.25rem;
+    }
+
+    .nav-button.right {
+      margin-left: 0.25rem;
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 400px) {
+    .testimonial {
+      width: calc(100vw - 50px) !important;
+      min-width: calc(100vw - 50px) !important;
+      max-width: calc(100vw - 50px) !important;
+      padding: 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .nav-button {
       font-size: 1.5rem;
-      padding: 0 0.5rem;
+      padding: 0.3rem;
     }
   }
   

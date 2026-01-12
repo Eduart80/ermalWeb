@@ -14,30 +14,38 @@ if (empty($_SESSION['csrf_token'])) {
     <link rel="icon" href="./images/Logo20x20.png" type="image/png" sizes="20x20">
    <meta
       name="description"
-      content="Professional home and commercial inspection services. | Probe Right Inspection
-       | Home inspection company | Dallas | Fort-Worth | Texas
-       | Affordable Home Inspection Dallas | Reliable Home Inspector DFW
-       | Detailed Inspection Reports | Licensed and Certified Home Inspector
-       | Trusted Home Inspector Texas | Thorough Home Inspections"
+      content="Professional home inspection services in Dallas-Fort Worth, Texas. Licensed InterNACHI certified inspectors offering thermal imaging, foundation checks, pool inspections, sewer line camera inspections. Get detailed reports within 24 hours. Same-day scheduling available. Serving DFW metroplex with precision and care."
     />
     <meta
       name="keywords"
-      content="Home inspection | Home inspection scheduling | home inspection incuiries 
-      | service provider | home inspection | commercial inspection | environmental assessment
-      | Home Inspector Dallas | Home Inspector Fort Worth | DFW Home Inspection Services
-      | Certified Home Inspector Dallas | Texas Home Inspection Company | Professional Home Inspections DFW"
+      content="home inspection Dallas, home inspector Fort Worth, DFW home inspection, thermal imaging inspection, foundation inspection Texas, pool inspection Dallas, sewer line camera inspection, residential home inspection, certified home inspector TREC, InterNACHI certified inspector, McKinney home inspection, Plano home inspector, Allen TX inspection services, pre-purchase home inspection, new construction inspection, commercial property inspection Dallas, moisture detection, drone roof inspection, detailed inspection report, same day inspection Dallas, affordable home inspection DFW, trusted home inspector Texas, structural inspection, irrigation system inspection, elevation survey, home inspection near me"
     />
     <meta name="ermal hila" content="Probe Right Inspection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/header.css">
+     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./contactUs/contactus.css">
     <link rel="stylesheet" href="./contactUs/questMssg.css">
 </head>
 <body>
     <header class="header">
         <a href="index.html">
-            <img src="./images/mainLogo2.png" alt="Probe Right Inspection Logo" class="logo-header">
+            <img src="./images/home_inspection_2.png" alt="Probe Right Inspection Logo" class="logo-header">
         </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="scheduler.html">Schedule</a></li>
+            </ul>
+        </nav>
     </header>
 
     <?php if (isset($_SESSION['message'])): ?>
@@ -72,6 +80,7 @@ if (empty($_SESSION['csrf_token'])) {
             <button class="btn"><i class="fa fa-home"></i></button>
         </a>
     </div>
+    <script src="./script/script.js"></script>
     <script src="./contactUs/contactus.js"></script>
 </body>
 </html>
