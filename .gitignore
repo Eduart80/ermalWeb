@@ -1,4 +1,6 @@
 .env
-/test.text
-/script/config
-/node_modules
+test.text
+script/config.js
+node_modules
+keyWorkd.tx
+
