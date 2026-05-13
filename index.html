@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Probe Right Inspection</title>
     <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="stylesheet" href="./style/page_overlay.css" />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/carusel.css" />
@@ -30,7 +31,39 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="styleSheet" href="./style/page_overlay.css"/>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Probe Right Inspection",
+  "url": "https://www.proberightinspection.com",
+  "logo": "https://www.proberightinspection.com/images/Logo20x20.png",
+  "image": "https://www.proberightinspection.com/images/home_inspection_2.png",
+  "description": "Professional home inspection services in Dallas-Fort Worth, Texas. Licensed InterNACHI certified inspectors offering thermal imaging, foundation checks, pool inspections, sewer line camera inspections. Get detailed reports within 24 hours. Same-day scheduling available.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6130 Alma Rd",
+    "addressLocality": "McKinney",
+    "addressRegion": "TX",
+    "postalCode": "75070",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "33.1972",
+    "longitude": "-96.6397"
+  },
+  "telephone": "+1-469-307-3467",
+  "email": "inspector@proberightinspection.com",
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "priceRange": "$$",
+  "areaServed": "Dallas-Fort Worth Metroplex",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61573689680403",
+    "https://www.instagram.com/proberightinspections"
+  ]
+}
+    </script>
   </head>
   <body>  
     <header class="header">
@@ -175,6 +208,12 @@
     </section>
 
     <section id="about" class="why-choose-section">
+      <div style="text-align: center; width: 100%;">
+        <a href="https://qualitybusinessawards.com/2026/the-best-Home-Inspectors-in-McKinney-Texas/ProbeRight-Inspection#winner-showcase" target="_blank">
+            <img src="./images/winner_award_2026.jpg" alt="InterNACHI Certification Logo" class="certification-logo">
+        </a>
+        <p style="font-size: 0.85em; color: #555;">The Best Home Inspectors in McKinney, Texas 2026</p>
+      </div>
       <h2>Why Choose Probe Right Inspection?</h2>
       <div class="why-grid">
         <div class="why-card">
@@ -354,7 +393,14 @@
       &uarr;
     </button>
 
-    <!-- <script type="text/javascript" src="./script/page_overlay.js"></script> -->
+    <!-- Ad Overlay -->
+    <!-- <div id="ad-overlay">
+      <button class="ad-close" id="ad-close-btn" aria-label="Close advertisement">&times;</button>
+      <img src="./images/marchAdd.jpg" alt="March Special Offer" id="ad-image" />
+      <span class="ad-timer" id="ad-timer">Closes in 5s</span>
+    </div> -->
+    
+    <script type="text/javascript" src="./script/page_overlay.js"></script>
     <script type="text/javascript" src="./script/script.js"></script>
     <script type="text/javascript" src="./script/carusel.js"></script>
     <script type="text/javascript" src="./script/animations.js"></script>

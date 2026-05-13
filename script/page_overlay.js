@@ -1,16 +1,33 @@
-window.addEventListener("load", function () {
-    // Set a timeout to hide the overlay after 30 seconds
-    setTimeout(function () {
-      const overlay = document.getElementById("page-overlay");
-      if (overlay) {
-        overlay.style.display = "none"; // Hide the overlay
-      }
-    },21000); // 30 seconds
-  });
-   // Close the overlay when clicking outside the content
-  document.getElementById("page-overlay").addEventListener("click", function (event) {
-    // Check if the click is outside the overlay content
-    if (!event.target.closest(".overlay-content")) {
-      this.style.display = "none"; // Hide the overlay
+(function () {
+  var overlay = document.getElementById('ad-overlay');
+  var timerEl = document.getElementById('ad-timer');
+  var closeBtn = document.getElementById('ad-close-btn');
+  var seconds = 5;
+
+  function closeAd() {
+    overlay.style.display = 'none';
+  }
+
+  var countdown = setInterval(function () {
+    seconds--;
+    timerEl.textContent = 'Closes in ' + seconds + 's';
+    if (seconds <= 0) {
+      clearInterval(countdown);
+      closeAd();
+    }
+  }, 1000);
+
+  // Close when clicking the backdrop (outside the image)
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) {
+      clearInterval(countdown);
+      closeAd();
     }
   });
+
+  // Close button
+  closeBtn.addEventListener('click', function () {
+    clearInterval(countdown);
+    closeAd();
+  });
+})();
