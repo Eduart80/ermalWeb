@@ -43,7 +43,7 @@ if (empty($_SESSION['csrf_token'])) {
                 <li><a href="index.html">Home</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="scheduler.html">Schedule</a></li>
+                <!-- <li><a href="scheduler.html">Schedule</a></li> -->
             </ul>
         </nav>
     </header>
